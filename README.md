@@ -4,12 +4,12 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline that enh
 Overview
 Large Language Models (LLMs) like GPT-4 are powerful but limited by training cutoffs. RAG solves this by injecting real-time, retrieved knowledge into the generation process, reducing hallucinations and improving contextual accuracy.
 
-📌 Features
-1.Document-aware QA using dense embeddings + vector search
-2.PDF upload + automatic chunking for corpus creation
-3.Top-k retrieval with FAISS based on cosine similarity
-4.Contextual answer generation using OpenAI’s GPT-4
-5.Offline-compatible with Hugging Face Transformers & FAISS
+###Features
+-1.Document-aware QA using dense embeddings + vector search
+-2.PDF upload + automatic chunking for corpus creation
+-3.Top-k retrieval with FAISS based on cosine similarity
+-4.Contextual answer generation using OpenAI’s GPT-4
+-5.Offline-compatible with Hugging Face Transformers & FAISS
 
 Tech Stack
 1.Python (core implementation)
