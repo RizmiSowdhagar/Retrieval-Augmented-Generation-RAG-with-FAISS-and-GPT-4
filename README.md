@@ -29,13 +29,14 @@ Large Language Models (LLMs) like GPT-4 are powerful but limited by training cut
 - **Similarity Search** → FAISS returns top-k similar chunks based on cosine similarity  
 - **Contextual Generation** → Retrieved chunks + user query fed into GPT-4 for grounded response  
 
+### Evaluation
 
-Evaluation
-1.ROUGE / BLEU metrics for textual overlap (if references exist)
-2.Human evaluation for factual grounding and fluency
-3.Chunk relevance, coherence, and hallucination checks
+- **ROUGE / BLEU metrics** for textual overlap (if references exist)  
+- **Human evaluation** for factual grounding and fluency  
+- **Chunk relevance**, coherence, and hallucination checks  
 
-Challenges & Future Work
-1.FAISS index must be rebuilt for new documents
-2.Latency depends on chunk size & embedding performance
-3.GPT-4 API usage incurs costs — future work includes adding cost-efficient open-source generators
+### Challenges & Future Work
+
+- **FAISS index** must be rebuilt for new documents  
+- **Latency** depends on chunk size & embedding performance  
+- **GPT-4 API usage incurs costs** — future work includes adding cost-efficient open-source generators  
