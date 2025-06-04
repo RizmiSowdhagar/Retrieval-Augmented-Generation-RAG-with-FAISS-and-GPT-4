@@ -4,7 +4,7 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline that enh
 Overview
 Large Language Models (LLMs) like GPT-4 are powerful but limited by training cutoffs. RAG solves this by injecting real-time, retrieved knowledge into the generation process, reducing hallucinations and improving contextual accuracy.
 
-### 📌 Features
+###  Features
 
 - Document-aware QA using dense embeddings + vector search  
 - PDF upload + automatic chunking for corpus creation  
@@ -12,21 +12,23 @@ Large Language Models (LLMs) like GPT-4 are powerful but limited by training cut
 - Contextual answer generation using OpenAI’s GPT-4  
 - Offline-compatible with Hugging Face Transformers & FAISS  
 
+### Tech Stack
 
-Tech Stack
-1.Python (core implementation)
-2.FAISS (Facebook AI Similarity Search)
-3.Sentence-BERT (all-MiniLM-L6-v2) via HuggingFace
-4.OpenAI GPT-4 API for final response generation
-5.PyPDF2 for PDF parsing
-6.Jupyter / Google Colab for development and demo
+- Python (core implementation)  
+- FAISS (Facebook AI Similarity Search)  
+- Sentence-BERT (`all-MiniLM-L6-v2`) via HuggingFace  
+- OpenAI GPT-4 API for final response generation  
+- PyPDF2 for PDF parsing  
+- Jupyter / Google Colab for development and demo  
 
-How It Works
-1.User Uploads File → Extracts text using PyPDF2
-2.Text Chunking → Divides long text into manageable semantic chunks
-3.Embedding → Sentence-BERT converts chunks and query into dense vectors
-4.Similarity Search → FAISS returns top-k similar chunks based on cosine similarity
-5.Contextual Generation → Retrieved chunks + user query fed into GPT-4 for grounded response
+### How It Works
+
+- **User Uploads File** → Extracts text using PyPDF2  
+- **Text Chunking** → Divides long text into manageable semantic chunks  
+- **Embedding** → Sentence-BERT converts chunks and query into dense vectors  
+- **Similarity Search** → FAISS returns top-k similar chunks based on cosine similarity  
+- **Contextual Generation** → Retrieved chunks + user query fed into GPT-4 for grounded response  
+
 
 Evaluation
 1.ROUGE / BLEU metrics for textual overlap (if references exist)
